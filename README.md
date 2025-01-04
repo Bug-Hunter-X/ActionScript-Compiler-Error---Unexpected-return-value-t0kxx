@@ -1,0 +1,3 @@
+# ActionScript Compiler Error: Unexpected Return Value
+
+This repository demonstrates a common, yet subtle, error in ActionScript related to the `trace()` function and function return types.  The issue arises when using `trace()` within a function declared with a `void` return type.  The compiler, expecting a return value, throws an error.  The solution highlights a simple fix by ensuring the function does not have a declared return type if it does not need to return a value.
